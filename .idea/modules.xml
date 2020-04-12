@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/pystock.iml" filepath="$PROJECT_DIR$/.idea/pystock.iml" />
+      <module fileurl="file://C:/python_automation_edu/.idea/python_automation_edu.iml" filepath="C:/python_automation_edu/.idea/python_automation_edu.iml" />
     </modules>
   </component>
 </project>

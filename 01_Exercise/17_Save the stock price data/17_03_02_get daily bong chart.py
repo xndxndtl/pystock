@@ -3,6 +3,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QAxContainer import *
 from PyQt5.QtCore import *
 
+TR_REQ_TIME_INTERVAL = 0.2   # 이전 예제 코드에서 추가 :
+
 class Kiwoom(QAxWidget):
     def __init__(self):
         super().__init__()
@@ -14,6 +16,7 @@ class Kiwoom(QAxWidget):
 
     def _set_signal_slots(self):
         self.OnEventConnect.connect(self._event_connect)
+        self.OnReceiveTrData.connect(self._receive_tr_data) # 이전 예제 코드에서 추가 : tr data 받는
 
     def comm_connect(self):
         self.dynamicCall("CommConnect()")
